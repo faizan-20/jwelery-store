@@ -724,6 +724,41 @@
           left: -30px;
         }
       }
+      .mega-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* left: -25px; */
+        left: -12%;
+        width: 100vw;
+        background: #fff;
+        border-top: 2px solid #eee;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 999;
+      }
+
+      .nav-item.dropdown:hover .mega-menu {
+        display: block;
+      }
+
+      .mega-menu h6 {
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .mega-menu ul li {
+        padding: 8px 0;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .mega-menu ul li:hover {
+        color: #c49b63;
+      }
+      .img-mega-menu {
+        width: 20px !important;
+      }
     </style>
   </head>
   <body>
@@ -775,12 +810,87 @@
               <a class="nav-link dropdown-toggle" href="#" role="button">
                 ENGAGEMENT RING
               </a>
-              <!-- Mega Menu (unchanged) -->
-              <!-- <div class="mega-menu"> -->
-              <!-- <div class="mega-menu-content"> -->
-              <!-- your mega menu columns/images here -->
-              <!-- </div> -->
-              <!-- </div> -->
+              <!-- Mega Menu -->
+              <div class="mega-menu p-4">
+                <div class="row">
+                  <!-- Shop by Metal -->
+                  <div class="col-md-3 ">
+                      <h6 class="fw-bold">Shop by Metal</h6>
+                    <div class="d-flex" style="gap: 20px"> 
+                      <img src="./Assests/694fef03925cbe4728394c33f9fde7a4.svg" class="img-fluid mb-2" alt="Metal">
+                      <ul class="list-unstyled">
+                        <li>Rose Gold</li>
+                        <li>Yellow Gold</li>
+                        <li>White Gold</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Shop by Shape -->
+                  <div class="col-md-3">
+                    <h6 class="fw-bold">Shop by Shape</h6>
+                    <div class="d-flex align-items-start" style="gap:20px"> 
+                      <img src="./Assests/pexels-the-glorious-studio-9145397.svg" class="img-fluid mb-2" alt="Shape">
+                      <ul class="list-unstyled">
+                        <li> 
+                          <img src="./Assests/briljant_2x.svg" alt="" class="img-mega-menu" >
+                          Round
+                        </li>
+                        <li>
+                          <img src="./Assests/princess_2x.svg" alt="" class="img-mega-menu" >
+                          Princess</li>
+                        <li> 
+                          <img src="./Assests/cushion_2x.svg" alt="" class="img-mega-menu" >
+                          Cushion</li>
+                        <li> 
+                          <img src="./Assests/ovaal_2x.svg" alt="" class="img-mega-menu" >
+                          Oval</li>
+                        <li> 
+                          <img src="./Assests/emerald_2x.svg" alt="" class="img-mega-menu" >
+                          Emerald</li>
+                      </ul>
+                      <ul class="list-unstyled"> 
+                        <li> 
+                          <img src="./Assests/peer_2x.svg" alt="" class="img-mega-menu" >
+                          Pear</li>
+                        <li> 
+                          <img src="./Assests/emerald_2x.svg" alt="" class="img-mega-menu" >
+                          Asscher</li>
+                        <li> 
+                          <img src="./Assests/hart_2x.svg" alt="" class="img-mega-menu" >
+                          Heart</li>
+                        <li> 
+                          <img src="./Assests/radiant_2x.svg" alt="" class="img-mega-menu" >
+                          Radiant</li>
+                        <li> 
+                          <img src="./Assests/markies_2x.svg" alt="" class="img-mega-menu" >
+                          Marquise</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Shop by Style -->
+                  <div class="col-md-3">
+                    <h6 class="fw-bold">Shop by Style</h6>
+                    <div class="d-flex" style="gap: 20px"> 
+                      <img src="./Assests/images.svg" class="img-fluid mb-2" alt="Style">
+                      <ul class="list-unstyled">
+                        <li>Solitaire</li>
+                        <li>Halo</li>
+                        <li>Sidestone</li>
+                        <li>Designer</li>
+                        <li>Vintage</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Promo -->
+                  <div class="col-md-3 text-center">
+                    <img src="./Assests/Mask Group 34.svg" class="img-fluid mb-3" alt="Promo">
+                    <button class="btn btn-dark btn-sm">See All Engagement Rings</button>
+                  </div>
+                </div>
+              </div>
             </li>
 
             <!-- Other Navigation Items -->
